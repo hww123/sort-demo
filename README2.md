@@ -18,15 +18,15 @@ PARTITION BY RANGE(`time`)
 PARTITION g2 VALUES [('2020-01-01 00:00:00'), ('2020-02-01 00:00:00')))
 DISTRIBUTED BY HASH(`table`, `attribute`, `value`) BUCKETS 10
 PROPERTIES (
-"replication_num" = "3",
-"dynamic_partition.enable" = "true",
-"dynamic_partition.time_unit" = "MONTH",
-"dynamic_partition.start" = "-2147483648",
-"dynamic_partition.end" = "1",
-"dynamic_partition.prefix" = "p",
-"dynamic_partition.buckets" = "10",
-"dynamic_partition.start_day_of_month" = "1",
-"in_memory" = "false",
-"storage_format" = "DEFAULT"
+  "replication_num" = "3",
+  "dynamic_partition.enable" = "true",
+  "dynamic_partition.time_unit" = "MONTH",
+  "dynamic_partition.start" = "-2147483648",
+  "dynamic_partition.end" = "1",
+  "dynamic_partition.prefix" = "p",
+  "dynamic_partition.buckets" = "10",
+  "dynamic_partition.start_day_of_month" = "1",
+  "in_memory" = "false",
+  "storage_format" = "DEFAULT"
 );
 ```
