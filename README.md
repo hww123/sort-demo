@@ -30,6 +30,9 @@ PROPERTIES (
 "storage_format" = "DEFAULT"
 );
 ```
+
+
+
 ```
 public void insertDorisData(DorisModel dorisModel) {
 
@@ -62,4 +65,4 @@ public void insertDorisData(DorisModel dorisModel) {
         }
 
     }
-    ```
+```
